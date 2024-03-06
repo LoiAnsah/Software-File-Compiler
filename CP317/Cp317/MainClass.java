@@ -1,4 +1,6 @@
 package CP317;
+
+import javax.swing.JFrame;
 /**
  * MainClass
  */
