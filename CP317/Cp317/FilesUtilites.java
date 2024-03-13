@@ -2,29 +2,26 @@ package CP317.src;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FilesUtilites {
     public Scanner SupplierFile;
     public Scanner ProductFile;
-
-    public static void UploadFile(final File file) {
-        try {
-            System.out.println(file.getName());
-            if (file.getName().equals("SupplierFile.txt")) {
-                Scanner SupplierFile = new Scanner(file);
-                SupplierFile.close();
-            } else if (file.getName()=="ProductFile.txt\n"){
-                Scanner ProductFile = new Scanner(file);
-                ProductFile.close();
-            } else {
-                System.out.println("Not a suitable file. Please pick the proper files.");
-            }
-        } catch (FileNotFoundException e1) {
-            e1.printStackTrace();
-        }
-    }
+    public Scanner InventoryFile;
     
+    public Scanner CombineInventory(final Scanner SupplierFile, final Scanner ProductFile) {
+        String supplierName = "",prductId = "";
+        int quantity = 0;
+        int price = 0; 
+        ArrayList<Inventory> Inventories = new ArrayList<Inventory>();
+        File tempInventoFile = new File("InventoryFile.txt");
+        String[] arraySupply = null;
+        
+
+        
+        return InventoryFile;
+    }
     public static void SupplierPrint(final Scanner SupplierFile) {
         String line;
         while (SupplierFile.hasNext()) {
@@ -43,3 +40,4 @@ public class FilesUtilites {
         ProductFile.close();
     }
 }
+
