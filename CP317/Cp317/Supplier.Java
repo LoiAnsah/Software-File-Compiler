@@ -1,5 +1,5 @@
 package Cp317;
-public class Supplier extends Inventory{
+public class Supplier extends Invetory{
 
     private int supplierId = 0;
     private String address = null;
