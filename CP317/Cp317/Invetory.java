@@ -1,5 +1,5 @@
 package CP317;
-public class Inventory {
+public class Invetory {
 
 
     private int productId = 0;
