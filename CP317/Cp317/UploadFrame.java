@@ -1,10 +1,11 @@
-package CP317.src;
+package Cp317.src;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+
 
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
@@ -29,10 +30,10 @@ public class UploadFrame extends JPanel{
                     try {
                         if (file.getName().equals("SupplierFile.txt")) {
                             SupplierFile = new Scanner(file);
-                            FilesUtilites.SupplierPrint(SupplierFile);
+                            FilesUtilites.readSupplier(SupplierFile);
                         } else if (file.getName().equals("ProductFile.txt")) {
                             ProductFile = new Scanner(file);
-                            FilesUtilites.ProductPrint(ProductFile);
+                            FilesUtilites.readProducts(ProductFile);
                         } else {
                             System.out.println("Invalid file. Please select the proper files.");
                         }   
@@ -57,3 +58,4 @@ public class UploadFrame extends JPanel{
 
     }
 }
+
