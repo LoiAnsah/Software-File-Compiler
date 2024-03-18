@@ -2,10 +2,10 @@ package CP317;
 public class Inventory {
 
 
-  private String productId = null;
+    private int productId = 0;
     private String productName = null;
-    private int quantity = 0;
-    private float price = 0;
+    private String quantity = null;
+    private String price = null;
     private String status = null;
     private String supplierName = null;
 
@@ -20,7 +20,7 @@ public class Inventory {
      * @param supplierId  Supplier ID
      */
 
-  public Inventory(String productId, String productName, int quantity, float price, String status,
+  public Inventory(int productId, String productName, String quantity, String price, String status,
 	    String supplierName) {
 
 	this.productId = productId;
@@ -35,7 +35,7 @@ public class Inventory {
      **
      * Getter for product ID
      */
-    public String getProductId() {
+    public int getProductId() {
 	return productId;
     }
 
@@ -56,14 +56,14 @@ public class Inventory {
      * Getter for product quantity
      */
 
-    public int getQuantity() {
+    public String getQuantity() {
 	return quantity;
     }
 
     /**
      * Getter for product price
      */
-    public float getPrice() {
+    public String getPrice() {
 	return price;
     }
 
