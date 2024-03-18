@@ -5,16 +5,7 @@ public class Product extends Inventory implements Comparable<Product> {
     private String productName = null;
     private int supplierId = 0;
 
-    /**
-     * Supplier constructor.
-     *
-     * @param productId   Product ID
-     * @param description Product description
-     * @param price       Product price
-     * @param quantity    Product quantity
-     * @param status      Product status
-     * @param supplierId  Supplier ID
-     */
+   
 
     public Product(int productId, String productName, String description, String price, String quantity, String status,
 	    int supplierId) {
