@@ -1,5 +1,5 @@
 package CP317;
-public class Product extends Inventory implements Comparable<Product> {
+public class Product extends Invetory implements Comparable<Product> {
 
     private String description = null;
     private String productName = null;
