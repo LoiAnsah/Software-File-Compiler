@@ -9,17 +9,6 @@ public class Inventory {
     private String status = null;
     private String supplierName = null;
 
-    /**
-     * Supplier constructor.
-     *
-     * @param productId   Product ID
-     * @param description Product name
-     * @param price       Product quantity
-     * @param quantity    Product price
-     * @param status      Product stat
-     * @param supplierId  Supplier ID
-     */
-
   public Inventory(int productId, String productName, String quantity, String price, String status,
 	    String supplierName) {
 
