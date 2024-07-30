@@ -1,4 +1,4 @@
-package Cp317.src;
+package CP317;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -6,8 +6,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
-
-
 
 
 
@@ -22,7 +20,7 @@ import java.util.Scanner;
 public class FilesUtilites {
 
 
-   public static void main(String[] args) {
+  /*public static void main(String[] args) {
     try {
 
       // Create Scanner objects for supplier and product files
@@ -42,7 +40,8 @@ public class FilesUtilites {
       System.out.println("An error occurred.");
       e.printStackTrace();
     }
-  }
+  }*/
+
   public static ArrayList<Supplier> readSupplier(final Scanner fileIn){
 
 
@@ -139,54 +138,5 @@ public class FilesUtilites {
     return InFile;
   }
 }
-
-
-
-
-/**   OLD VERSION
-package CP317.src;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Scanner;
-
-public class FilesUtilites {
-    public Scanner SupplierFile;
-    public Scanner ProductFile;
-    public Scanner InventoryFile;
-    
-    public Scanner CombineInventory(final Scanner SupplierFile, final Scanner ProductFile) {
-        String supplierName = "",prductId = "";
-        int quantity = 0;
-        int price = 0; 
-        ArrayList<Inventory> Inventories = new ArrayList<Inventory>();
-        File tempInventoFile = new File("InventoryFile.txt");
-        String[] arraySupply = null;
-        
-
-        
-        return InventoryFile;
-    }
-    public static void SupplierPrint(final Scanner SupplierFile) {
-        String line;
-        while (SupplierFile.hasNext()) {
-            line = SupplierFile.nextLine();
-            System.out.println(line);
-        }
-        SupplierFile.close();
-    }
-
-    public static void ProductPrint(final Scanner ProductFile) {
-        String line;
-        while (ProductFile.hasNext()) {
-            line = ProductFile.nextLine();
-            System.out.println(line);
-        }
-        ProductFile.close();
-    }
-}
-
-*/
 
 
